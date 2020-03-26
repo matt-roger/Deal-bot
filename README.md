@@ -4,3 +4,4 @@
   "token":"BOT_TOKEN_KEY_HERE"
 }
 `
+* Right now you must also create a logs folder and a imgs folder
