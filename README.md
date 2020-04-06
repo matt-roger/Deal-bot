@@ -6,6 +6,7 @@ The deal bot is a discord bot that scraps the internet for deals and bundles and
 `
 {
   "token":"BOT_TOKEN_KEY_HERE"
+  "channel":"CHANNEL_KEY_HERE"
 }
 `
 * Right now you must also create a logs folder and a img folder
