@@ -6,6 +6,11 @@ from discord.ext import commands
 from datetime import datetime
 import time
 
+def get_channel():
+    with open('secret.json') as json_file:
+        data = json.load(json_file)
+    return data['channel']
+
 def get_token():
     with open('secret.json') as json_file:
         data = json.load(json_file)
@@ -81,7 +86,7 @@ async def on_ready():
     
 async def start_up(last):
     now = datetime.date(datetime.now())
-    channel = client.get_channel(692103127947673605)
+    channel = client.get_channel(get_channel())
     print("now: ")
     print(now)
     print("last: ")
